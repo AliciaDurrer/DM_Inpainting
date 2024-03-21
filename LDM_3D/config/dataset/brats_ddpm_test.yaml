@@ -1,0 +1,4 @@
+name: BRATS_DDPM_TEST
+root_dir: /home/user/LDM_3D
+image_channels: 1
+imgtype: t1n

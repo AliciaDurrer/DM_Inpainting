@@ -1,0 +1,27 @@
+vqgan_ckpt: ??? 
+
+# Have to be derived from VQ-GAN Latent space dimensions
+diffusion_img_size: ???
+diffusion_depth_size: ???
+diffusion_num_channels: ???
+dim_mults: ???
+results_folder: "/home/user/LDM_3D/results/"
+results_folder_postfix: ''
+load_milestone: True
+
+batch_size: 16
+num_workers: 20
+logger: wandb
+objective: pred_x0
+save_and_sample_every: 1000
+denoising_fn: Unet3D
+train_lr: 1e-4
+timesteps: 1000 # number of steps
+sampling_timesteps: 1000 # number of sampling timesteps (using ddim for faster inference [see citation for ddim paper])
+loss_type: l1 # L1 or L2
+train_num_steps: 500001 # total training steps
+gradient_accumulate_every: 2 # gradient accumulation steps
+ema_decay: 0.995 # exponential moving average decay
+amp: False # turn on mixed precision
+num_sample_rows: 1
+gpus: 1
