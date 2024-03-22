@@ -1,7 +1,7 @@
 # Diffusion Models for Inpainting
 
 
-Repository containing the code for all explored and extended methods used in the paper "Healthy Brain Tissue Inpainting using Denoising Diffusion Models".
+Repository containing the code for all explored and extended methods used in the paper "Denoising Diffusion Models for 3D Healthy Brain Tissue Inpainting". The paper is available at https://arxiv.org/abs/2403.14499.
 
 General overview over training and sampling procedure:
 
